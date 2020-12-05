@@ -83,7 +83,6 @@ int main2()
         s++;
     }
     q--;
-    printf("vpravo\n");
     if(s-1==n*k)
         break;
     m=j; i--;
@@ -93,7 +92,6 @@ int main2()
         s++;
     }
     p--;
-    printf("vniz\n");
     if(s-1==n*k)
         break;
     m=i; j--;
@@ -103,7 +101,6 @@ int main2()
         s++;
     }
     q--;
-    printf("vlevo\n");
     if(s-1==n*k)
         break;
     m=j; i++;
@@ -113,7 +110,6 @@ int main2()
         s++;
     }
     p--;
-    printf("vverh\n");
     if(s-1==n*k)
         break;
     } while (s<=n*k);
@@ -144,7 +140,7 @@ int main3()
 	for (j=0; j<n; j++)
     for (i=0; i<k; i++)
     {
-        a[j][i]=abs(i-j)+1;
+        a[j][i]=rand%10;
     }
     for (j=0; j<n; j++)
     {
@@ -167,7 +163,7 @@ int main4()
 	for (j=0; j<n; j++)
     for (i=0; i<k; i++)
     {
-        a[j][i]=abs(i-j)+1; // scanf("%d", &a[i][j]);
+        a[j][i]=rand()%10; // scanf("%d", &a[i][j]);
     }
     for (j=0; j<n; j++)
     {
