@@ -47,7 +47,7 @@ void summa_v_stolbtse(int** a, int n, int k)
             s[i]=s[i]+a[j][i];
     for(i=0; i<k; i++)
         printf("%d ", s[i]);
-    printf("\n");
+    printf("\n\n");
     bababa(s, a, n, k);
     for(i=0; i<k; i++)
         printf("%d ", s[i]);
@@ -70,7 +70,7 @@ int main2()
         printf("%d ", a[j][i]);
     printf("\n");
     }
-
+    printf("\n");
 
     int s=1, p=k, q=n, m;
     int** b = funk(n, k);
@@ -140,7 +140,7 @@ int main3()
 	for (j=0; j<n; j++)
     for (i=0; i<k; i++)
     {
-        a[j][i]=rand%10;
+        a[j][i]=rand()%10;
     }
     for (j=0; j<n; j++)
     {
@@ -171,8 +171,9 @@ int main4()
         printf("%d ", a[j][i]);
     printf("\n");
     }
-    summa_v_stolbtse(a, n, k);
     printf("\n");
+    summa_v_stolbtse(a, n, k);
+    printf("\n\n");
     for (j=0; j<n; j++)
     {
     for (i=0; i<k; i++)
